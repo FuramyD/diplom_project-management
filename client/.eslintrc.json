@@ -1,0 +1,79 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "projects/**/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "parserOptions": {
+        "project": [
+          "tsconfig.json"
+        ],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates"
+      ],
+      "rules": {
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "pm",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "pm",
+            "style": "kebab-case"
+          }
+        ],
+        "ngrx/no-multiple-actions-in-effects": "off",
+        "quotes": [
+          "warn",
+          "double",
+          "avoid-escape"
+        ],
+        "object-curly-spacing": [
+          "warn",
+          "always"
+        ],
+        "semi": [
+          "warn",
+          "always"
+        ],
+        "indent": [
+          "warn",
+          4,
+          {
+            "SwitchCase": 1
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended"
+      ],
+      "rules": {}
+    },
+    {
+      "files": [
+        "*.ts"
+      ],
+      "extends": [
+        "plugin:ngrx/recommended"
+      ]
+    }
+  ]
+}
