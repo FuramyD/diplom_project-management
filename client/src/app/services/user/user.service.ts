@@ -1,9 +1,9 @@
 import { Injectable } from "@angular/core";
-import { User } from "../../models/user.model";
-import { RestApiService } from "../rest-api/rest-api.service";
-import { AuthService } from "../auth/auth.service";
 import { Store } from "@ngrx/store";
 import { Observable } from "rxjs";
+import { User } from "../../models/user.model";
+import { AuthService } from "../auth/auth.service";
+import { RestApiService } from "../rest-api/rest-api.service";
 
 @Injectable({
     providedIn: "root"
