@@ -1,0 +1,20 @@
+{
+  "name": "diplom",
+  "version": "1.0.0",
+  "description": "project management system (my diplom project for NNSTU)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "url": "https://github.com/FuramyD/diplom_project-management"
+  },
+  "keywords": [
+    "pm",
+    "project",
+    "management",
+    "system"
+  ],
+  "author": "Alexander Kazantsev",
+  "license": "ISC"
+}

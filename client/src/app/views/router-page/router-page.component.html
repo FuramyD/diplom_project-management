@@ -1,0 +1,15 @@
+<ng-container *ngIf="{
+    user: _user$ | async
+} as data">
+    <div class="ep-router-page">
+        <div class="ep-router-page__header">
+            <ep-header [username]="_getFullName(data.user)"></ep-header>
+        </div>
+        <div class="ep-router-page__main">
+            <div class="ep-router-page__main-routing">
+                <ep-navigation-bar class="ep-navigation"></ep-navigation-bar>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</ng-container>
